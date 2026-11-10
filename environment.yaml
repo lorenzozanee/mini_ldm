@@ -1,0 +1,21 @@
+name: mini_ldm
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python >=3.10,<3.13
+  - pip
+
+  # Core scientific stack
+  - numpy >=2.0
+  - matplotlib >=3.8
+  - tqdm >=4.66
+
+  # PyTorch ecosystem — adjust cuda version as needed (cpu, cu118, cu124, etc.)
+  - pytorch >=2.4
+  - torchvision >=0.19
+
+  - pip:
+      - einops >=0.8
